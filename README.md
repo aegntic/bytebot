@@ -12,9 +12,37 @@
 
 [![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://github.com/bytebot-ai/bytebot/tree/main/docker)
 [![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](LICENSE)
+[![Ultra Sequential Swarm](https://img.shields.io/badge/Ultra%20Sequential%20Swarm-universal%20integration-blue.svg)](https://github.com/aegntic/bytebot/tree/main/ultra-sequential-swarm-universal)
 [![Discord](https://img.shields.io/discord/1232768900274585720?color=7289da&label=discord)](https://discord.com/invite/d9ewZkWPTP)
 
 [🌐 Website](https://bytebot.ai) • [📚 Documentation](https://docs.bytebot.ai) • [💬 Discord](https://discord.com/invite/d9ewZkWPTP) • [𝕏 Twitter](https://x.com/bytebot_ai)
+
+---
+
+## 🧠 Ultra Sequential Swarm Integration
+
+**Universal AI Assistant Integration** - Multi-agent collaborative thinking that works across Claude Code, Gemini CLI, Codex, Auggie, Cline, Kilo, and all major AI coding assistants.
+
+### 🚀 Universal Features:
+- **🥇 MCP Server** (Best for Claude Code, Cline, Cursor)
+- **🥈 Shell Commands** (Works everywhere with Gemini CLI, Aider, Kilo)
+- **🧠 Context-Aware Suggestions** (Smart pattern recognition)
+- **🎯 Interactive Prompt Building** (Combination options + user editing)
+- **📋 Enterprise Licensing** (FREE for ≤$500K revenue, $36,900/year for >$500K)
+
+### 📦 Installation:
+```bash
+# One-command universal installation
+curl -fsSL https://raw.githubusercontent.com/aegntic/aegntic-MCP/main/ultra-sequential-swarm-universal/installers/install-universal.sh | bash
+```
+
+### 🔗 Documentation:
+- **GitHub**: https://github.com/aegntic/aegntic-MCP/tree/main/ultra-sequential-swarm-universal
+- **Features**: Context-aware suggestions, sequential thinking, collaborative ultrathink
+- **Platform Support**: MCP, Shell Commands, Extensions
+
+### 📧 Contact:
+- **Enterprise**: contact@ae.ltd | **Research**: research@aegntic.ai | **Media**: media@aegntic.ai
 
 <!-- Keep these links. Translations will automatically update with the README. -->
 [Deutsch](https://zdoc.app/de/bytebot-ai/bytebot) | 

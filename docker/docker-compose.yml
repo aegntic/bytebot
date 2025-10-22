@@ -1,4 +1,4 @@
-name: bytebot
+version: '3.8'
 
 services:
   bytebot-desktop:
@@ -25,7 +25,7 @@ services:
     container_name: bytebot-postgres
     restart: unless-stopped
     ports:
-      - "5432:5432"
+      - "15432:5432"
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres
@@ -51,8 +51,28 @@ services:
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - Z_AI_API_KEY=${Z_AI_API_KEY}
+      - BYTEBOT_LLM_PROXY_URL=${BYTEBOT_LLM_PROXY_URL:-http://bytebot-llm-proxy:4000}
     depends_on:
       - postgres
+    networks:
+      - bytebot-network
+
+  bytebot-llm-proxy:
+    build:
+      context: ../packages/
+      dockerfile: bytebot-llm-proxy/Dockerfile
+    # Use pre-built image
+    image: ghcr.io/bytebot-ai/bytebot-llm-proxy:edge
+    container_name: bytebot-llm-proxy
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - Z_AI_API_KEY=${Z_AI_API_KEY}
     networks:
       - bytebot-network
 
